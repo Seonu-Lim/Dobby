@@ -13,4 +13,10 @@
 
 3. 스탬프의 위치는 우측 상단 고정, 크기는 폰트 사이즈 15-20pt 정도로 눈에 잘 들어오는 정도면 된다.
 
-![sampleimage](sampledata/image.png)
+![sampleimage](image.png)
+
+## Usage 
+
+```
+python newstab_stamper.py --origin_path /PATH/OF/ORIGINAL/FILES --destination_path /DESTINATION/OF/STAMPED/FILES
+```
