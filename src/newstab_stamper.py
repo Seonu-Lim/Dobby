@@ -2,6 +2,7 @@ import os
 from _stamper import *
 from tqdm import tqdm
 import argparse
+import time
 
 
 def stamp_all_files(origin_path, destination_path):
@@ -19,4 +20,6 @@ def main():
 
 
 if __name__ == "__main__":
+    start_time = time.time()
     main()
+    print(f'Execution Time : {time.time()-start_time} seconds.')

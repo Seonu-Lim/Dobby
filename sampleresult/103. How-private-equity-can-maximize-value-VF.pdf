@@ -52,7 +52,7 @@ endobj
 /Properties <<
 /MC0 36 0 R
 >>
-/ProcSet [ /ImageI /ImageC /Text /PDF /ImageB ]
+/ProcSet [ /ImageC /ImageB /Text /PDF /ImageI ]
 >>
 /Rotate 0
 /TrimBox [ 0 0 612 792 ]
@@ -105,7 +105,7 @@ endobj
 /Properties <<
 /MC0 68 0 R
 >>
-/ProcSet [ /ImageI /ImageC /Text /PDF /ImageB ]
+/ProcSet [ /ImageC /ImageB /Text /ImageI /PDF ]
 >>
 /Rotate 0
 /TrimBox [ 0 0 612 792 ]
@@ -151,7 +151,7 @@ endobj
 /XObject <<
 /Fm0 73 0 R
 >>
-/ProcSet [ /ImageI /ImageC /Text /PDF /ImageB ]
+/ProcSet [ /ImageC /ImageB /Text /ImageI /PDF ]
 >>
 /Rotate 0
 /TrimBox [ 0 0 612 792 ]
@@ -204,7 +204,7 @@ endobj
 /Properties <<
 /MC0 89 0 R
 >>
-/ProcSet [ /ImageI /ImageC /Text /PDF /ImageB ]
+/ProcSet [ /ImageC /ImageB /Text /ImageI /PDF ]
 >>
 /Rotate 0
 /TrimBox [ 0 0 612 792 ]
@@ -250,7 +250,7 @@ endobj
 /XObject <<
 /Fm0 73 0 R
 >>
-/ProcSet [ /ImageI /ImageC /Text /PDF /ImageB ]
+/ProcSet [ /ImageC /ImageB /Text /ImageI /PDF ]
 >>
 /Rotate 0
 /TrimBox [ 0 0 612 792 ]
@@ -295,7 +295,7 @@ endobj
 /XObject <<
 /Fm0 65 0 R
 >>
-/ProcSet [ /ImageI /ImageC /Text /PDF /ImageB ]
+/ProcSet [ /ImageC /ImageB /Text /ImageI /PDF ]
 >>
 /Rotate 0
 /TrimBox [ 0 0 612 792 ]
@@ -345,7 +345,7 @@ endobj
 /Properties <<
 /MC0 107 0 R
 >>
-/ProcSet [ /ImageI /ImageC /Text /PDF /ImageB ]
+/ProcSet [ /ImageC /ImageB /Text /ImageI /PDF ]
 >>
 /Rotate 0
 /TrimBox [ 0 0 612 792 ]
@@ -389,7 +389,7 @@ endobj
 /XObject <<
 /Fm0 65 0 R
 >>
-/ProcSet [ /ImageI /ImageC /Text /PDF /ImageB ]
+/ProcSet [ /ImageC /ImageB /Text /ImageI /PDF ]
 >>
 /Rotate 0
 /TrimBox [ 0 0 612 792 ]

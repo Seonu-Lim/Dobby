@@ -55,7 +55,7 @@ endobj
 /Properties <<
 /MC0 38 0 R
 >>
-/ProcSet [ /ImageI /ImageC /Text /PDF /ImageB ]
+/ProcSet [ /ImageC /ImageB /Text /PDF /ImageI ]
 >>
 /Rotate 0
 /TrimBox [ 0 0 612 792 ]
@@ -117,7 +117,7 @@ endobj
 /Properties <<
 /MC0 77 0 R
 >>
-/ProcSet [ /ImageI /ImageC /Text /PDF /ImageB ]
+/ProcSet [ /ImageC /ImageB /Text /ImageI /PDF ]
 >>
 /Rotate 0
 /TrimBox [ 0 0 612 792 ]
@@ -171,7 +171,7 @@ endobj
 /Properties <<
 /MC0 92 0 R
 >>
-/ProcSet [ /ImageI /ImageC /Text /PDF /ImageB ]
+/ProcSet [ /ImageC /ImageB /Text /ImageI /PDF ]
 >>
 /Rotate 0
 /TrimBox [ 0 0 612 792 ]
@@ -227,7 +227,7 @@ endobj
 /Properties <<
 /MC0 108 0 R
 >>
-/ProcSet [ /ImageI /ImageC /Text /PDF /ImageB ]
+/ProcSet [ /ImageC /ImageB /Text /ImageI /PDF ]
 >>
 /Rotate 0
 /TrimBox [ 0 0 612 792 ]
@@ -280,7 +280,7 @@ endobj
 /Properties <<
 /MC0 123 0 R
 >>
-/ProcSet [ /ImageI /ImageC /Text /PDF /ImageB ]
+/ProcSet [ /ImageC /ImageB /Text /ImageI /PDF ]
 >>
 /Rotate 0
 /TrimBox [ 0 0 612 792 ]
@@ -329,7 +329,7 @@ endobj
 /ColorSpace <<
 /CS0 35 0 R
 >>
-/ProcSet [ /ImageI /ImageC /Text /PDF /ImageB ]
+/ProcSet [ /ImageC /ImageB /Text /ImageI /PDF ]
 >>
 /Rotate 0
 /TrimBox [ 0 0 612 792 ]
@@ -376,7 +376,7 @@ endobj
 /ColorSpace <<
 /CS0 35 0 R
 >>
-/ProcSet [ /ImageI /ImageC /Text /PDF /ImageB ]
+/ProcSet [ /ImageC /ImageB /Text /ImageI /PDF ]
 >>
 /Rotate 0
 /TrimBox [ 0 0 612 792 ]
