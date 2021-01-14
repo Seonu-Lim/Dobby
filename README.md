@@ -23,9 +23,8 @@ Run below command before executing newstab_stamper for installing required packa
 pip install -r requirements.txt
 ```
 
-Inputs are two path arguments, for the original documents and the destination.
+Input is a path argument, for the original documents.
 
 ```
-python newstab_stamper.py --origin_path /PATH/OF/ORIGINAL/FILES --destination_path /DESTINATION/OF/STAMPED/FILES
+python newstab_stamper.py --origin_path /PATH/OF/ORIGINAL/FILES
 ```
-

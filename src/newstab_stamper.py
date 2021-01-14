@@ -10,14 +10,14 @@ def stamp_all_files(origin_path, destination_path):
     for f in tqdm(filelist):
         stamp_document(origin_path, f, destination_path)
 
-
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--origin_path", type=str)
-    parser.add_argument("--destination_path", type=str)
+    parser.add_argument("--path", type=str)
     args = parser.parse_args()
-    stamp_all_files(args.origin_path, args.destination_path)
-
+    destination_path = os.path.join(args.origin_path,'output')
+    if not os.path.exists(destination_path) :
+        os.makedirs(destination_path)
+    stamp_all_files(args.origin_path, destination_path)
 
 if __name__ == "__main__":
     start_time = time.time()

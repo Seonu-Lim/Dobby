@@ -10,12 +10,10 @@ def generate_stamp(x, y, doc_number, page_number):
     fontsize = crit * 0.025
     can.setFont(
         "Courier-Bold", fontsize
-    )  # TODO : Font Size also should be dependent on page size
+    ) 
     can.setFillColorRGB(255, 0, 0)
     can.setStrokeColorRGB(255, 0, 0)
-
     boxheight = crit * 0.0465
-
     if page_number < 10:
         boxwidth = crit * 0.2252 * 0.8
     elif page_number < 100:
