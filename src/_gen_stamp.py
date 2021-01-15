@@ -1,18 +1,25 @@
 from PyPDF2 import PdfFileReader
 import io
-from reportlab.pdfgen import canvas
+from reportlab.pdfgen import canvas as cv
+
+
+FILL_RGB = (255, 0, 0)
+STROKE_RGB = (255, 0, 0)
 
 
 def generate_stamp(x, y, code, doc_number, page_number):
+    """
+    Drawing the stamp with given information.
+    """
     packet = io.BytesIO()
-    can = canvas.Canvas(packet, pagesize=(x, y))
+    canvas = cv.Canvas(packet, pagesize=(x, y))
     crit = float(max(x, y))
     fontsize = crit * 0.025
-    can.setFont(
+    canvas.setFont(
         "Courier-Bold", fontsize
     ) 
-    can.setFillColorRGB(255, 0, 0)
-    can.setStrokeColorRGB(255, 0, 0)
+    canvas.setFillColorRGB(*FILL_RGB)
+    canvas.setStrokeColorRGB(*STROKE_RGB)
     boxheight = crit * 0.0465
     if page_number < 10:
         boxwidth = crit * 0.2252 * 0.8
@@ -22,13 +29,13 @@ def generate_stamp(x, y, code, doc_number, page_number):
         boxwidth = crit * 0.2801 * 0.8
 
     if x < y:  # Portrait
-        position = (float(x) * 0.64, float(y) * 0.95203488)
+        position = {"x": float(x) * 0.64, "y": float(y) * 0.95203488}
     else:  # Landscape
-        position = (float(x) * 0.708, float(y) * 0.90288714)
+        position = {"x": float(x) * 0.708, "y": float(y) * 0.90288714}
 
-    can.rect(position[0] * 0.99, position[1] * 0.985, boxwidth, boxheight)
-    can.drawString(position[0], position[1], f"{code}-{doc_number}-{page_number}")
-    can.save()
+    canvas.rect(position["x"] * 0.99, position["y"] * 0.985, boxwidth, boxheight)
+    canvas.drawString(position["x"], position["y"], f"{code}-{doc_number}-{page_number}")
+    canvas.save()
     packet.seek(0)
     stamp = PdfFileReader(packet)
     return stamp.getPage(0)
