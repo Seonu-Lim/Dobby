@@ -3,7 +3,7 @@ import io
 from reportlab.pdfgen import canvas
 
 
-def generate_stamp(x, y, doc_number, page_number):
+def generate_stamp(x, y, code, doc_number, page_number):
     packet = io.BytesIO()
     can = canvas.Canvas(packet, pagesize=(x, y))
     crit = float(max(x, y))
@@ -27,7 +27,7 @@ def generate_stamp(x, y, doc_number, page_number):
         position = (float(x) * 0.708, float(y) * 0.90288714)
 
     can.rect(position[0] * 0.99, position[1] * 0.985, boxwidth, boxheight)
-    can.drawString(position[0], position[1], f"3000c-{doc_number}-{page_number}")
+    can.drawString(position[0], position[1], f"{code}-{doc_number}-{page_number}")
     can.save()
     packet.seek(0)
     stamp = PdfFileReader(packet)
