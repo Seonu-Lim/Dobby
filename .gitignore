@@ -128,3 +128,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+src/temp.py
+src/_gen_gui.py

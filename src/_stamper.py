@@ -1,6 +1,4 @@
 from PyPDF2 import PdfFileReader, PdfFileWriter
-import io
-from reportlab.pdfgen import canvas
 from _gen_stamp import *
 import os
 
@@ -11,7 +9,7 @@ def stamp_document(code, origin_path, file_name, destination_path):
     """
     from_path = os.path.join(origin_path, file_name)
     doc_num = file_name[:3]
-    new_pdf = PdfFileReader(open(from_path, "rb"))
+    new_pdf = PdfFileReader(open(from_path, "rb"),strict=False)
     n_page = new_pdf.numPages
     output = PdfFileWriter()
     for i in range(n_page):
