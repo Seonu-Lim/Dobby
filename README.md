@@ -1,4 +1,4 @@
-# ![icon](img/icon.png)newstab-stamper![icon](img/icon.png)
+# Dobby <img src="img/icon.png" width="50" height="50"> 
 
 1. sampledata 폴더의 pdf 파일 상단에 하기와 같은 형태로 스탬프(pdf 텍스트 추가형태) 날인
 
@@ -20,14 +20,14 @@
 
 Run below command before executing newstab_stamper for installing required packages.
 
-```
+```shell
 pip install -r requirements.txt
 ```
 
 Input is a path argument, for the original documents.
 
-```
-python newstab_stamper.py --origin_path /PATH/OF/ORIGINAL/FILES
+```shell
+python Dobby.py
 ```
 
 ## Release note
