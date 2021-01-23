@@ -28,16 +28,17 @@ class Dobby(Frame) :
         self.destination_path = os.path.join(self.origin_path, code)
         if os.path.exists(self.destination_path) :
             msgbox = messagebox.askyesno('Dobby','해당 경로에 같은 코드의 폴더가 이미 존재합니다. 덮어쓰시겠습니까?')
-            print(msgbox)
             if msgbox == True :
                 shutil.rmtree(self.destination_path)
                 os.makedirs(self.destination_path)
+                self.stamp_all(code,self.destination_path)
+                self.done_stamping()
             else :
                 self.ask_code()
         else :
             os.makedirs(self.destination_path)
-        self.stamp_all(code,self.destination_path)
-        self.done_stamping()
+            self.stamp_all(code,self.destination_path)
+            self.done_stamping()
     
     def stamp_all(self,code,destination_path) :
         filelist = [file_name for file_name in os.listdir(self.origin_path) if file_name[-4:] == ".pdf"]
