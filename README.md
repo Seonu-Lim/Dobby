@@ -28,3 +28,7 @@ Input is a path argument, for the original documents.
 ```
 python newstab_stamper.py --origin_path /PATH/OF/ORIGINAL/FILES
 ```
+
+## Release note
+
+https://www.notion.so/beeb3b510bfd4d14add28acb61fc2ffa
