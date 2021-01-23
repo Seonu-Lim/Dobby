@@ -130,3 +130,6 @@ dmypy.json
 .pyre/
 src/temp.py
 src/_gen_gui.py
+
+# Mac dump
+.DS_Store
