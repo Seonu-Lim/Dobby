@@ -18,13 +18,13 @@
 
 ## Usage 
 
-Run below command before executing newstab_stamper for installing required packages.
+Run below command before executing Dobby to install required packages.
 
 ```shell
 pip install -r requirements.txt
 ```
 
-Input is a path argument, for the original documents.
+To run in shell, 
 
 ```shell
 python Dobby.py
