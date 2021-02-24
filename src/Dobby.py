@@ -4,6 +4,7 @@ import shutil
 from tkinter import *
 from tkinter import filedialog
 from tkinter import messagebox
+import tkinter.ttk as ttk
 from _stamper import *
 
 class Dobby(Frame) :
@@ -42,8 +43,17 @@ class Dobby(Frame) :
     
     def stamp_all(self,code,destination_path) :
         filelist = [file_name for file_name in os.listdir(self.origin_path) if file_name[-4:] == ".pdf"]
+        root = Toplevel()
+        var = DoubleVar()
+        i = 0
+        var.set(i)
+        progressbar = ttk.Progressbar(root,maximum=len(filelist),variable=var)
         for file_name in filelist:
             stamp_document(code, self.origin_path, file_name, destination_path)
+            i += 1
+            var.set(i)
+            progressbar.update()
+        root.destroy()
         
     def done_stamping(self) :
         root = Toplevel()
