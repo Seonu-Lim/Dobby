@@ -47,7 +47,8 @@ class Dobby(Frame) :
         var = DoubleVar()
         i = 0
         var.set(i)
-        progressbar = ttk.Progressbar(root,maximum=len(filelist),variable=var)
+        progressbar = ttk.Progressbar(root,maximum=len(filelist),length=400,variable=var)
+        progressbar.pack()
         for file_name in filelist:
             stamp_document(code, self.origin_path, file_name, destination_path)
             i += 1
